@@ -4,36 +4,38 @@
 Корпус (corpora):
 * – id
 * – lang (язык)
-* – texts_number (число текстов)
-* – sents_number (число предложений)
-* – tokens_number (число словоупотреблений)
-* – tokens_percent (% словоупотреблений)
+* – text_number (число текстов)
+* – sent_number (число предложений)
+* – token_number (число словоупотреблений)
+* – token_percent (% словоупотреблений)
 
 Текст (text):
 * – id
 * – corpora_id (id корпуса)
 * – author_id (id автора)
+* – second_author_id (id соавтора)
 * – translator_id (id переводчика)
-* – name (название на языке оригинала)
-* – name_rus (название на русском)
-* – genre (сфера функционирования)
+* – second_translator_id (id второго переводчика)
+* – name_original (название на языке оригинала)
+* – name_translated (название на языке перевода)
+* – sphere (сфера функционирования)
 * – creation_date (год создания)
 * – translation_date (год перевода)
-* – sents_number (число предложений)
-* – tokens_number (число словоформ)
+* – sent_number (число предложений)
+* – token_number (число словоформ)
 
 Автор (author):
 * – id
 * – name (имя на языке оригинала)
 * – name_rus (имя на русском)
-* – texts_number (число текстов)
-* – texts_percent (% текстов)
+* – text_number (число текстов)
+* – text_percent (% текстов)
 
 Переводчик (translator):
 * – id
 * – name (имя)
-* – texts_number (число текстов)
-* – texts_percent (% текстов)
+* – text_number (число текстов)
+* – text_percent (% текстов)
 
 
-Примечание – не учитывался многоязычный раздел параллельного подкорпуса НКРЯ.
+Примечание – не учитывался многоязычный раздел параллельного подкорпуса НКРЯ и подкорпус русской классики в немецких переводах.
