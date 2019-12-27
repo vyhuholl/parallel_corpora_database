@@ -1,17 +1,17 @@
 Схема базы данных:
 
 
-Корпус (corpora):
+Корпуса (corpora):
 * – id
 * – lang (язык)
-* – text_number (число текстов)
-* – sent_number (число предложений)
-* – token_number (число словоупотреблений)
-* – token_percent (% словоупотреблений)
+* – texts_number (число текстов)
+* – sents_number (число предложений)
+* – tokens_number (число словоупотреблений)
+* – tokens_percent (% словоупотреблений)
 
-Текст (text):
+Тексты (texts):
 * – id
-* – corpora_id (id корпуса)
+* – corpus_id (id корпуса)
 * – author_id (id автора)
 * – second_author_id (id соавтора)
 * – translator_id (id переводчика)
@@ -21,21 +21,21 @@
 * – sphere (сфера функционирования)
 * – creation_date (год создания)
 * – translation_date (год перевода)
-* – sent_number (число предложений)
-* – token_number (число словоформ)
+* – sents_number (число предложений)
+* – tokens_number (число словоформ)
 
-Автор (author):
+Авторы (authors):
 * – id
 * – name (имя на языке оригинала)
 * – name_rus (имя на русском)
-* – text_number (число текстов)
-* – text_percent (% текстов)
+* – texts_number (число текстов)
+* – texts_percent (% текстов)
 
-Переводчик (translator):
+Переводчики (translators):
 * – id
 * – name (имя)
-* – text_number (число текстов)
-* – text_percent (% текстов)
+* – texts_number (число текстов)
+* – texts_percent (% текстов)
 
 
 Примечание – не учитывался многоязычный раздел параллельного подкорпуса НКРЯ и подкорпус русской классики в немецких переводах.
