@@ -72,4 +72,8 @@ db.execute("""LOAD DATA LOCAL INFILE 'data/authors.csv'
 db.execute("""LOAD DATA LOCAL INFILE 'data/translators.csv' 
               INTO TABLE translators 
               FIELDS TERMINATED BY ',' IGNORE 1 ROWS;""")
+db.execute("UPDATE texts SET value=NULL WHERE value='nan'")
+db.execute("UPDATE texts SET value=NULL WHERE value=0")
+db.execute("UPDATE texts SET value=NULL WHERE value=-1")
+db.execute("UPDATE authors SET value=NULL WHERE value='nan'")
 logging.info("Database creation finished.")
