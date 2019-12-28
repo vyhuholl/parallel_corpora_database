@@ -11,6 +11,8 @@ db.execute("""
            CREATE TABLE corpora
            (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
            lang TEXT NOT NULL,
-           texts_number INTEGER);
+           texts_number INTEGER NOT NULL,
+           texts_number INTEGER NOT NULL,
+           texts_number INTEGER NOT NULL);
            """)
 logging.info("Table creation finished.")
