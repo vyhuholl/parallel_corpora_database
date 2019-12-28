@@ -31,11 +31,10 @@ pip3 install -r requirements.txt
 ```
 3. Убедиться, что у вас установлен mysql.
 4. Заменить в файле `authentification.py` `USER` и `PASSWORD` на логин и пароль от вашего MySql сервера.
-5. Находясь в репозитории приложения, запустить mysql и импортировать БД под именем `parallel_corpora_db`:
+5. Находясь в репозитории приложения, запустить mysql и импортировать БД под именем `parallel_corpora_db`, заменив *username* на логин от вашего MySql сервера:
 ```bash
 mysql -u username -p parallel_coprora_db < parallel_coprora_db.sql
 ```
-заменив *username* на логин от вашего MySql сервера.
 6. Находясь в репозитории приложения, запустить `main_py`:
 ```bash
 python main.py

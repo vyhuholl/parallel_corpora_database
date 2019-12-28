@@ -12,7 +12,7 @@ db.execute("""
            (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
            lang TEXT NOT NULL,
            texts_number INTEGER NOT NULL,
-           texts_number INTEGER NOT NULL,
+           tokens_number INTEGER NOT NULL,
            texts_number INTEGER NOT NULL);
            """)
 logging.info("Table creation finished.")
