@@ -1,2 +1,3 @@
-# parallel_corpora_database
-A database for the Russian parallel corpora. My project for the DB course at Higher School of Economics.
+# База данных параллельного подкорпуса НКРЯ
+
+Описание базы данных содержится в файле *Схема БД.txt*. *db_init.py* – скрипт, который создаёт необходимые таблицы, *db_backend.py* – запросы к БД, *main.py* – веб-интерфейс на Фласке.
